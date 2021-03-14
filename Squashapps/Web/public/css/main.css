@@ -1,0 +1,166 @@
+
+/* --------------------- PayRoll Dashboard ------ */
+.scorecard{
+    margin: 0px 50px 0px 50px;
+    text-align: center;    
+    margin-bottom: 12px;
+
+}
+.innercard{
+    font-size: x-large;
+}
+.reportheight{
+max-height: 440px;
+min-height: 440px;
+    
+}
+
+.firstpagebox{
+    /* margin: 5% 35% 5% 35%; */
+border: 1px solid antiquewhite;
+width: fit-content;
+background-color: #f9fafa;
+padding: 3% 32% 10% 30%
+}
+.labelcss{
+    margin: 10px;
+}
+.inputcss{
+    width:100%;    
+    border: 1px solid #e6e6e6;
+    padding-left: 10px;
+}
+.inputcss:hover{
+    outline:none ;   
+  }
+  .inputcss:focus{
+    outline:none ;    
+  }
+.component{
+    margin: 10px;
+    border: 1px solid white;
+    background-color: white;
+    padding: 10px;
+}
+.buttoncss{
+    width:100%; 
+    background-color: #ed5901;
+    color: white;
+    border: 1px solid #ed5901;
+    margin-top: 10px;
+}
+.buttoncss:focus{
+    outline: none;
+    background-color: #facdb3;
+    border: 1px solid #facdb3;
+    color: black;
+}
+h2{
+    color: black;
+    font-weight: bolder;
+}
+.heading{
+    margin: 10px 78px;
+}
+.sub{
+    margin: 2px 20px;
+}
+.gendrcss{
+    text-align: center;
+    margin-right: 10px;
+    width: 15%;
+    height: 34px !important;  
+    padding: 5px;  
+    border: 1px solid #e6e6e6;
+    border-radius: 5px;
+    background-color: white;
+}
+.gendrcss:focus{
+    outline: #fdeee6 ;
+    background-color: #fdeee6;
+    border: 1px solid #fdeee6;
+    color:#ed5901;
+}
+.cmpyheading{
+    margin: 10px 71px;
+}
+.termscss{
+    margin: 10px;
+      vertical-align:middle;
+}
+.backbutton{
+    width:25%; 
+    background-color: #f4f6f7;
+    color: black;
+    border: 1px solid #f4f6f7;
+    margin: 10px;
+}
+.OTPbutton{
+    width:60%; 
+    background-color: #ed5901;
+    color: white;
+    border: 1px solid #ed5901;
+    margin: 10px;
+}
+.uploadfile{
+    border-radius: 50%;
+    height: 80px;    
+    width: 80px;
+    border: dashed;
+    border-color: #e6e6e6;    
+    opacity:0; 
+    margin-left: -3px;
+    margin-top: -3px;
+
+}
+.uploadfile:hover{
+    outline:none;
+}
+.uploadfile:focus{
+    outline:none;  
+}
+.imgdiv{
+    border-radius: 50%; 
+    /* opacity: 0; */
+    
+}
+.coverimg{
+    border-radius: 50%;
+    height: 80px;
+    background-size: cover;
+    width: 80px;
+    border: dashed;
+    border-color: #e6e6e6;
+    /* background-image: url(../img/Untitled.png); */
+}
+.uploadlable{    
+    position: absolute;
+    right: 47%;
+    top: 35%;
+}
+.otpcomponent{
+    padding:20px;
+}
+.otpheading{
+    margin: 10px 135px;
+}
+.otplable{
+    text-align: center;
+}
+.otpinput{
+    width: 45px;
+    height: 45px;
+    text-align: center;
+    margin:15px;
+    border: 2px solid #e6e6e6;
+}
+.otpinput:focus{
+    background-color: #ffffff;
+    border:1px solid #ed5901;
+    outline: none;
+}
+.footerotp{
+    border-top: 2px solid #e6e6e6 ;
+    text-align: center;
+    padding: 10px;
+}

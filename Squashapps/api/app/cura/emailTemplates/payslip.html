@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+</head>
+<body>
+
+	<header>
+		<h2>PAYSLIP</h2>
+		
+		<h1>2ND HALF PAYROLL</h1>
+		<hr></hr>
+		
+	</header>
+	
+	<div class="content-part">
+		
+		<div class="content-part-text" style="width: 100%;">
+			
+		
+			<div class="content-part-text" style="width: 45%; display: inline-block; padding-left: 1%;">
+				
+				<p>EMPLOYEE / LINE NO :  <span style="padding-left: 2%;  text-align: right; margin-right: 2%; text-decoration: underline;">##employee## </span></p>
+				<p>CATEGORY :  <span style="padding-left: 2%;  text-align: right; margin-right: 2%; text-decoration: underline;"> ##CATEGORY##</span></p>
+				<p>BASIC RATE :   <span style="padding-left: 2%; margin-right: 2%; text-decoration: underline;"> ##BASIC_RATE##</span></p>
+				<p>WORKING DAYS :<span style="padding-left: 2%;  margin-right: 2%; text-decoration: underline;"> ##WORKING_DAYS## </span></p>
+				<p><br></p>
+				<p><br></p>
+			</div>
+
+			<div class="content-part-text" style="width: 45%;  display: inline-block;">
+				
+				<p> NAME <span style="padding-left:2%;  margin-right: 2%;text-decoration: underline; "> ##NAME##</span></p>
+				<p> I/C NO.  <span style="padding-left: 2%;  margin-right: 2%; text-decoration: underline;"> ##I/C_NO## </span></p>
+				<div style="width: 100%; display: inline-block">
+				
+					<div style="width: 45%; float: left; margin:1%">
+						<p>ALLOWANCE</p>
+						<hr>
+						<p>##ALLOWANCE##</p>
+					</div>
+					<div style="width: 45%; float: left; margin:1%">
+						<p>DEDUCTION</p>
+						<hr>
+						<p>##DEDUCTION##</p>
+					</div>
+					
+
+				</div>
+			</div>
+			
+			<div class="content-part-text" style="width: 45%; padding-left: 1%; display: inline-block;">
+				<hr>
+				<p>DW: <span>##dw##</span></p>
+				<hr>
+				<p>BASIC PAY : <span>##basic_pay##</span></p>
+				<br>
+				<br>
+				<br>
+
+
+				<div style="width: 100%; margin:1%; display: inline-block;">
+					<div style="width: 23%; display: inline-block;">
+						<p>OVERTIME</p>
+					</div>
+					<div style="width: 23%; display: inline-block;">
+						<p>RATE</p>
+					</div>
+					<div style="width: 23%; display: inline-block;">
+						<p>HRS/DAYS</p>
+					</div>
+					<div style="width: 3%; display: inline-block;">
+						<p>AMOUNT</p>
+					</div>
+					<hr>
+					<div style="width: 23%; display: inline-block;">
+						<p>##OVERTIME##</p>
+					</div>
+					<div style="width: 23%; display: inline-block;">
+						<p>##RATE##</p>
+					</div>
+					<div style="width: 23%; display: inline-block;">
+						<p>##HRS/DAYS##</p>
+					</div>
+					<div style="width: 3%; display: inline-block;">
+						<p>##AMOUNT##</p>
+					</div>
+				</div>
+			</div>
+
+			<div class="content-part-text" style="width: 45%; padding-left: 1%; display: inline-block;">
+			
+				<br>
+				<br>
+				<br>
+				<br>
+				
+			
+				<div style="width: 100%; margin:1%; display: inline-block;">
+					<div style="width: 45%; display: inline-block;">
+					  <hr>
+					  <p>MONTHLY GROSS : <span>##monthly_gross##</span></p>
+					  <p>EPF 'YER : <span>##epf_yer##</span></p>
+					  <p>SOCSO 'YER  : <span>##socso_yer##</span></p>
+					  <br> <br>
+					  <p>EIS 'YER : <span>##eis##</span></p>
+					  <p>YTD AL : <span>##ytd_al##</span></p>
+					  <p>YTD MC   : <span>##ytd_mc##</span></p>
+					  
+
+					</div>
+					<div style="width: 45%; display: inline-block;">
+						<hr>
+						<br>
+						<br>
+						<br>
+						<br>
+						<br><br>
+						<br>
+						<br><br>
+						<br><br>
+					</div>
+
+				</div>
+
+
+				
+			</div>
+			
+			
+		</div>
+
+		<div style="width: 99%; display: inline-block; align-items: center; padding: 5px">
+			<table style="width: 100%">
+				<thead>
+					<tr>
+						<th>BASIC PAY</th>
+                        <th>DIRECTOR FEE</th>
+                        <th>OVERTIME</th>
+                        <th>ALLOWANCE</th>
+                        <th>GROSS PAY</th>
+                        <th>DEDUCTION</th>
+                        <th>EPF</th>
+                        <th>SOCSO</th>
+                        <th>EIS</th>
+                        <th>NETT</th>
+                        <th style="width: 5%"></th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>##basic_pay##</td>
+						<td>##director_fee##</td>
+						<td>##overtime##</td>
+						<td>##allowance##</td>
+						<td>##grosspay##</td>
+						<td>##deduction##</td>
+						<td>##epf##</td>
+						<td>##socso##</td>
+						<td>##eis##</td>
+						<td>##nett##</td>
+						<td>##sign##</td>
+					</tr>
+				</tbody>
+
+			</table>
+		</div>
+
+
+	</div>
+
+		
+	
+
+
+</body>
+
+<style>
+
+	table, th, td {
+		border: 2px solid lightgrey;
+		border-collapse: collapse;
+		padding: 5px
+	}
+
+		thead { display: table-header-group;}
+		tr { page-break-inside: avoid;
+		 page-break-after: avoid;
+		 page-break-before: avoid;}
+
+		 td{
+		 	text-align: center;
+		 }
+
+		 body{
+			position: relative;
+    		margin: 0px !important;
+			overflow-x: hidden;
+			font-family:  sans-serif;
+		 }
+
+		 header h1 {
+			text-align: center;
+			font-size:24px;
+			font-weight:600; 
+			margin-top: 3%;
+		 }
+		 header h2 {
+			text-align: center;
+			font-size:20px;
+			font-weight:400; 
+			
+		 }
+		 header p {
+			text-align: center;
+			font-size:12px;
+			line-height: 20px;
+		 }
+		 .content-part {
+			 width: 100%;
+			 margin-right: 2%;
+		 }
+		 .content-part-heading {
+			width: 100%;
+			 background:#3C8DBC;
+			 color: white;
+			 padding: 3px;
+			 text-align:center;
+		 }
+		 .content-part-text h2 {
+			 text-align: left;
+			 padding-left: 2%;
+			 font-weight: bold;
+			 font-size: 18px;
+		 }
+		 .content-part p{
+			 width: 100%;
+			 padding-left: 2%;
+			 font-size: 13px;
+		 }
+		 .content-part-text p {
+			
+			 padding-left: 2%;
+			 
+		 }
+		 .content-part-text {
+			
+			margin-right: 2%;
+			
+		}
+		.name-box {
+			padding: 10px;
+			border: 2px solid black;
+			border-radius: 3px;
+			width: 60%;
+			margin:2% 5% 3% 0%;
+			float: right;
+		}
+
+
+
+	</style>
+</html>
+
+
+
+
+
+

@@ -1,0 +1,430 @@
+10-Dec-20 18:03:16 - [_internal.py:88] -                 _log()  * Restarting with stat
+10-Dec-20 18:03:18 - [_internal.py:88] -                 _log()  * Debugger is active!
+10-Dec-20 18:03:18 - [_internal.py:88] -                 _log()  * Debugger PIN: 163-372-452
+10-Dec-20 18:03:18 - [_internal.py:88] -                 _log()  * Running on http://0.0.0.0:5050/ (Press CTRL+C to quit)
+10-Dec-20 18:27:58 - [_internal.py:88] -                 _log()  * Restarting with stat
+10-Dec-20 18:28:00 - [_internal.py:88] -                 _log()  * Debugger is active!
+10-Dec-20 18:28:00 - [_internal.py:88] -                 _log()  * Debugger PIN: 163-372-452
+10-Dec-20 18:28:00 - [_internal.py:88] -                 _log()  * Running on http://0.0.0.0:5050/ (Press CTRL+C to quit)
+10-Dec-20 18:28:25 - [_internal.py:88] -                 _log()  * Detected change in 'D:\\Sysram\\Malaka\\api\\app\\__init__.py', reloading
+10-Dec-20 18:28:25 - [_internal.py:88] -                 _log()  * Restarting with stat
+10-Dec-20 18:28:32 - [_internal.py:88] -                 _log()  * Debugger is active!
+10-Dec-20 18:28:32 - [_internal.py:88] -                 _log()  * Debugger PIN: 163-372-452
+10-Dec-20 18:28:32 - [_internal.py:88] -                 _log()  * Running on http://0.0.0.0:5050/ (Press CTRL+C to quit)
+10-Dec-20 18:28:45 - [_internal.py:88] -                 _log()  * Restarting with stat
+10-Dec-20 18:28:47 - [_internal.py:88] -                 _log()  * Debugger is active!
+10-Dec-20 18:28:47 - [_internal.py:88] -                 _log()  * Debugger PIN: 163-372-452
+10-Dec-20 18:28:47 - [_internal.py:88] -                 _log()  * Running on http://0.0.0.0:5050/ (Press CTRL+C to quit)
+10-Dec-20 19:15:01 - [_internal.py:88] -                 _log()  * Detected change in 'D:\\Sysram\\Malaka\\api\\app\\__init__.py', reloading
+10-Dec-20 19:15:01 - [_internal.py:88] -                 _log()  * Restarting with stat
+10-Dec-20 19:15:06 - [_internal.py:88] -                 _log()  * Debugger is active!
+10-Dec-20 19:15:06 - [_internal.py:88] -                 _log()  * Debugger PIN: 163-372-452
+10-Dec-20 19:15:06 - [_internal.py:88] -                 _log()  * Running on http://0.0.0.0:5050/ (Press CTRL+C to quit)
+10-Dec-20 19:38:28 - [_internal.py:88] -                 _log()  * Detected change in 'D:\\Sysram\\Malaka\\api\\app\\cura\\user\\service\\auth_helper.py', reloading
+10-Dec-20 19:38:28 - [_internal.py:88] -                 _log()  * Restarting with stat
+10-Dec-20 19:38:33 - [_internal.py:88] -                 _log()  * Debugger is active!
+10-Dec-20 19:38:33 - [_internal.py:88] -                 _log()  * Debugger PIN: 163-372-452
+10-Dec-20 19:38:33 - [_internal.py:88] -                 _log()  * Running on http://0.0.0.0:5050/ (Press CTRL+C to quit)
+10-Dec-20 19:38:45 - [_internal.py:88] -                 _log()  * Restarting with stat
+10-Dec-20 19:38:48 - [_internal.py:88] -                 _log()  * Debugger is active!
+10-Dec-20 19:38:48 - [_internal.py:88] -                 _log()  * Debugger PIN: 163-372-452
+10-Dec-20 19:38:48 - [_internal.py:88] -                 _log()  * Running on http://0.0.0.0:5050/ (Press CTRL+C to quit)
+10-Dec-20 19:44:44 - [_internal.py:88] -                 _log() 127.0.0.1 - - [10/Dec/2020 19:44:44] "OPTIONS /auth/login HTTP/1.1" 200 -
+10-Dec-20 19:44:48 - [_internal.py:88] -                 _log() 127.0.0.1 - - [10/Dec/2020 19:44:48] "POST /auth/login HTTP/1.1" 200 -
+10-Dec-20 19:51:44 - [_internal.py:88] -                 _log() 127.0.0.1 - - [10/Dec/2020 19:51:44] "OPTIONS /auth/login HTTP/1.1" 200 -
+10-Dec-20 19:52:06 - [auth_helper.py:38] -           login_user() (psycopg2.OperationalError) server closed the connection unexpectedly
+	This probably means the server terminated abnormally
+	before or while processing the request.
+ [SQL: 'SELECT tbluser.id AS tbluser_id, tbluser.public_id AS tbluser_public_id, tbluser.email AS tbluser_email, tbluser.first_name AS tbluser_first_name, tbluser.last_name AS tbluser_last_name, tbluser.roles AS tbluser_roles, tbluser.address AS tbluser_address, tbluser.password_hash AS tbluser_password_hash, tbluser.image_path AS tbluser_image_path, tbluser.license_expiry_date AS tbluser_license_expiry_date, tbluser.gdl_expiry_date AS tbluser_gdl_expiry_date, tbluser.medical_cert_expiry_date AS tbluser_medical_cert_expiry_date, tbluser.passport_expiry_date AS tbluser_passport_expiry_date, tbluser.base_pass_expiry_date AS tbluser_base_pass_expiry_date, tbluser.created_by AS tbluser_created_by, tbluser.updated_by AS tbluser_updated_by, tbluser.created_date AS tbluser_created_date, tbluser.updated_date AS tbluser_updated_date, tbluser."isActive" AS "tbluser_isActive" \nFROM tbluser \nWHERE tbluser.email = %(email_1)s AND tbluser."isActive" = %(isActive_1)s \n LIMIT %(param_1)s'] [parameters: {'email_1': 'arulselvi.m@mycura.com', 'isActive_1': 1, 'param_1': 1}] (Background on this error at: http://sqlalche.me/e/e3q8)
+10-Dec-20 19:52:06 - [_internal.py:88] -                 _log() 127.0.0.1 - - [10/Dec/2020 19:52:06] "POST /auth/login HTTP/1.1" 200 -
+10-Dec-20 19:52:16 - [_internal.py:88] -                 _log() 127.0.0.1 - - [10/Dec/2020 19:52:16] "OPTIONS /auth/login HTTP/1.1" 200 -
+10-Dec-20 19:52:17 - [_internal.py:88] -                 _log() 127.0.0.1 - - [10/Dec/2020 19:52:17] "POST /auth/login HTTP/1.1" 200 -
+11-Dec-20 11:36:46 - [_internal.py:88] -                 _log()  * Restarting with stat
+11-Dec-20 11:36:47 - [_internal.py:88] -                 _log()  * Debugger is active!
+11-Dec-20 11:36:47 - [_internal.py:88] -                 _log()  * Debugger PIN: 163-372-452
+11-Dec-20 11:36:47 - [_internal.py:88] -                 _log()  * Running on http://0.0.0.0:5050/ (Press CTRL+C to quit)
+11-Dec-20 11:38:18 - [_internal.py:88] -                 _log() 127.0.0.1 - - [11/Dec/2020 11:38:18] "GET /user/forgotpassword/ HTTP/1.1" 404 -
+11-Dec-20 11:39:24 - [_internal.py:88] -                 _log() 127.0.0.1 - - [11/Dec/2020 11:39:24] "GET / HTTP/1.1" 200 -
+11-Dec-20 11:39:24 - [_internal.py:88] -                 _log() 127.0.0.1 - - [11/Dec/2020 11:39:24] "GET /swaggerui/swagger-ui.css HTTP/1.1" 200 -
+11-Dec-20 11:39:24 - [_internal.py:88] -                 _log() 127.0.0.1 - - [11/Dec/2020 11:39:24] "GET /swaggerui/droid-sans.css HTTP/1.1" 200 -
+11-Dec-20 11:39:25 - [_internal.py:88] -                 _log() 127.0.0.1 - - [11/Dec/2020 11:39:25] "GET /swaggerui/swagger-ui-standalone-preset.js HTTP/1.1" 200 -
+11-Dec-20 11:39:25 - [_internal.py:88] -                 _log() 127.0.0.1 - - [11/Dec/2020 11:39:25] "GET /swaggerui/swagger-ui-bundle.js HTTP/1.1" 200 -
+11-Dec-20 11:39:25 - [_internal.py:88] -                 _log() 127.0.0.1 - - [11/Dec/2020 11:39:25] "GET /swaggerui/favicon-32x32.png HTTP/1.1" 200 -
+11-Dec-20 11:39:25 - [_internal.py:88] -                 _log() 127.0.0.1 - - [11/Dec/2020 11:39:25] "GET /swagger.json HTTP/1.1" 200 -
+11-Dec-20 11:56:14 - [_internal.py:88] -                 _log() 127.0.0.1 - - [11/Dec/2020 11:56:14] "OPTIONS /leavemanagement/applyleave HTTP/1.1" 200 -
+11-Dec-20 11:56:14 - [common.py:82] -  convertdmy_to_date2() time data 'string' does not match format '%d-%m-%Y'
+Traceback (most recent call last):
+  File "D:\Sysram\Malaka\api\app\cura\common\common.py", line 80, in convertdmy_to_date2
+    return datetime.strptime(strdate, "%d-%m-%Y") if strdate else ""
+  File "C:\Program Files\Python36\lib\_strptime.py", line 565, in _strptime_datetime
+    tt, fraction = _strptime(data_string, format)
+  File "C:\Program Files\Python36\lib\_strptime.py", line 362, in _strptime
+    (data_string, format))
+ValueError: time data 'string' does not match format '%d-%m-%Y'
+11-Dec-20 11:56:14 - [common.py:82] -  convertdmy_to_date2() time data 'string' does not match format '%d-%m-%Y'
+Traceback (most recent call last):
+  File "D:\Sysram\Malaka\api\app\cura\common\common.py", line 80, in convertdmy_to_date2
+    return datetime.strptime(strdate, "%d-%m-%Y") if strdate else ""
+  File "C:\Program Files\Python36\lib\_strptime.py", line 565, in _strptime_datetime
+    tt, fraction = _strptime(data_string, format)
+  File "C:\Program Files\Python36\lib\_strptime.py", line 362, in _strptime
+    (data_string, format))
+ValueError: time data 'string' does not match format '%d-%m-%Y'
+11-Dec-20 11:56:17 - [_internal.py:88] -                 _log() 127.0.0.1 - - [11/Dec/2020 11:56:17] "POST /leavemanagement/applyleave HTTP/1.1" 200 -
+11-Dec-20 11:56:55 - [common.py:82] -  convertdmy_to_date2() time data 'string' does not match format '%d-%m-%Y'
+Traceback (most recent call last):
+  File "D:\Sysram\Malaka\api\app\cura\common\common.py", line 80, in convertdmy_to_date2
+    return datetime.strptime(strdate, "%d-%m-%Y") if strdate else ""
+  File "C:\Program Files\Python36\lib\_strptime.py", line 565, in _strptime_datetime
+    tt, fraction = _strptime(data_string, format)
+  File "C:\Program Files\Python36\lib\_strptime.py", line 362, in _strptime
+    (data_string, format))
+ValueError: time data 'string' does not match format '%d-%m-%Y'
+11-Dec-20 11:56:55 - [common.py:82] -  convertdmy_to_date2() time data 'string' does not match format '%d-%m-%Y'
+Traceback (most recent call last):
+  File "D:\Sysram\Malaka\api\app\cura\common\common.py", line 80, in convertdmy_to_date2
+    return datetime.strptime(strdate, "%d-%m-%Y") if strdate else ""
+  File "C:\Program Files\Python36\lib\_strptime.py", line 565, in _strptime_datetime
+    tt, fraction = _strptime(data_string, format)
+  File "C:\Program Files\Python36\lib\_strptime.py", line 362, in _strptime
+    (data_string, format))
+ValueError: time data 'string' does not match format '%d-%m-%Y'
+11-Dec-20 11:56:55 - [_internal.py:88] -                 _log() 127.0.0.1 - - [11/Dec/2020 11:56:55] "POST /leavemanagement/applyleave HTTP/1.1" 200 -
+11-Dec-20 11:58:36 - [_internal.py:88] -                 _log() 127.0.0.1 - - [11/Dec/2020 11:58:36] "OPTIONS /leavemanagement/applyleave HTTP/1.1" 200 -
+11-Dec-20 11:58:36 - [common.py:82] -  convertdmy_to_date2() time data 'string' does not match format '%d-%m-%Y'
+Traceback (most recent call last):
+  File "D:\Sysram\Malaka\api\app\cura\common\common.py", line 80, in convertdmy_to_date2
+    return datetime.strptime(strdate, "%d-%m-%Y") if strdate else ""
+  File "C:\Program Files\Python36\lib\_strptime.py", line 565, in _strptime_datetime
+    tt, fraction = _strptime(data_string, format)
+  File "C:\Program Files\Python36\lib\_strptime.py", line 362, in _strptime
+    (data_string, format))
+ValueError: time data 'string' does not match format '%d-%m-%Y'
+11-Dec-20 11:58:36 - [common.py:82] -  convertdmy_to_date2() time data 'string' does not match format '%d-%m-%Y'
+Traceback (most recent call last):
+  File "D:\Sysram\Malaka\api\app\cura\common\common.py", line 80, in convertdmy_to_date2
+    return datetime.strptime(strdate, "%d-%m-%Y") if strdate else ""
+  File "C:\Program Files\Python36\lib\_strptime.py", line 565, in _strptime_datetime
+    tt, fraction = _strptime(data_string, format)
+  File "C:\Program Files\Python36\lib\_strptime.py", line 362, in _strptime
+    (data_string, format))
+ValueError: time data 'string' does not match format '%d-%m-%Y'
+11-Dec-20 11:58:36 - [_internal.py:88] -                 _log() 127.0.0.1 - - [11/Dec/2020 11:58:36] "POST /leavemanagement/applyleave HTTP/1.1" 200 -
+11-Dec-20 12:00:10 - [_internal.py:88] -                 _log() 127.0.0.1 - - [11/Dec/2020 12:00:10] "OPTIONS /leavemanagement/applyleave HTTP/1.1" 200 -
+11-Dec-20 12:00:10 - [common.py:82] -  convertdmy_to_date2() time data 'string' does not match format '%d-%m-%Y'
+Traceback (most recent call last):
+  File "D:\Sysram\Malaka\api\app\cura\common\common.py", line 80, in convertdmy_to_date2
+    return datetime.strptime(strdate, "%d-%m-%Y") if strdate else ""
+  File "C:\Program Files\Python36\lib\_strptime.py", line 565, in _strptime_datetime
+    tt, fraction = _strptime(data_string, format)
+  File "C:\Program Files\Python36\lib\_strptime.py", line 362, in _strptime
+    (data_string, format))
+ValueError: time data 'string' does not match format '%d-%m-%Y'
+11-Dec-20 12:00:10 - [common.py:82] -  convertdmy_to_date2() time data 'string' does not match format '%d-%m-%Y'
+Traceback (most recent call last):
+  File "D:\Sysram\Malaka\api\app\cura\common\common.py", line 80, in convertdmy_to_date2
+    return datetime.strptime(strdate, "%d-%m-%Y") if strdate else ""
+  File "C:\Program Files\Python36\lib\_strptime.py", line 565, in _strptime_datetime
+    tt, fraction = _strptime(data_string, format)
+  File "C:\Program Files\Python36\lib\_strptime.py", line 362, in _strptime
+    (data_string, format))
+ValueError: time data 'string' does not match format '%d-%m-%Y'
+11-Dec-20 12:00:10 - [_internal.py:88] -                 _log() 127.0.0.1 - - [11/Dec/2020 12:00:10] "POST /leavemanagement/applyleave HTTP/1.1" 200 -
+11-Dec-20 15:27:08 - [_internal.py:88] -                 _log()  * Detected change in 'D:\\Sysram\\Malaka\\api\\app\\cura\\user\\model\\user.py', reloading
+11-Dec-20 15:27:09 - [_internal.py:88] -                 _log()  * Restarting with stat
+11-Dec-20 15:27:12 - [_internal.py:88] -                 _log()  * Debugger is active!
+11-Dec-20 15:27:12 - [_internal.py:88] -                 _log()  * Debugger PIN: 163-372-452
+11-Dec-20 15:27:12 - [_internal.py:88] -                 _log()  * Running on http://0.0.0.0:5050/ (Press CTRL+C to quit)
+12-Dec-20 15:32:20 - [_internal.py:88] -                 _log()  * Restarting with stat
+12-Dec-20 15:32:23 - [_internal.py:88] -                 _log()  * Debugger is active!
+12-Dec-20 15:32:23 - [_internal.py:88] -                 _log()  * Debugger PIN: 163-372-452
+12-Dec-20 15:32:23 - [_internal.py:88] -                 _log()  * Running on http://0.0.0.0:3031/ (Press CTRL+C to quit)
+12-Dec-20 15:33:56 - [_internal.py:88] -                 _log()  * Restarting with stat
+12-Dec-20 15:33:58 - [_internal.py:88] -                 _log()  * Debugger is active!
+12-Dec-20 15:33:58 - [_internal.py:88] -                 _log()  * Debugger PIN: 163-372-452
+12-Dec-20 15:33:58 - [_internal.py:88] -                 _log()  * Running on http://0.0.0.0:3031/ (Press CTRL+C to quit)
+12-Dec-20 15:35:49 - [_internal.py:88] -                 _log() 127.0.0.1 - - [12/Dec/2020 15:35:49] "OPTIONS /leavemanagement/applyleave HTTP/1.1" 200 -
+12-Dec-20 15:35:49 - [_internal.py:88] -                 _log() 127.0.0.1 - - [12/Dec/2020 15:35:49] "POST /leavemanagement/applyleave HTTP/1.1" 400 -
+12-Dec-20 15:38:54 - [_internal.py:88] -                 _log() 127.0.0.1 - - [12/Dec/2020 15:38:54] "OPTIONS /leavemanagement/applyleave HTTP/1.1" 200 -
+12-Dec-20 15:38:54 - [_internal.py:88] -                 _log() 127.0.0.1 - - [12/Dec/2020 15:38:54] "POST /leavemanagement/applyleave HTTP/1.1" 400 -
+12-Dec-20 15:52:12 - [_internal.py:88] -                 _log() 127.0.0.1 - - [12/Dec/2020 15:52:12] "OPTIONS /leavemanagement/applyleave HTTP/1.1" 200 -
+12-Dec-20 15:52:12 - [_internal.py:88] -                 _log() 127.0.0.1 - - [12/Dec/2020 15:52:12] "POST /leavemanagement/applyleave HTTP/1.1" 400 -
+12-Dec-20 15:55:47 - [_internal.py:88] -                 _log() 127.0.0.1 - - [12/Dec/2020 15:55:47] "OPTIONS /leavemanagement/applyleave HTTP/1.1" 200 -
+12-Dec-20 15:55:47 - [_internal.py:88] -                 _log() 127.0.0.1 - - [12/Dec/2020 15:55:47] "POST /leavemanagement/applyleave HTTP/1.1" 400 -
+12-Dec-20 17:07:14 - [_internal.py:88] -                 _log() 127.0.0.1 - - [12/Dec/2020 17:07:14] "OPTIONS /leavemanagement/applyleave HTTP/1.1" 200 -
+12-Dec-20 17:07:14 - [_internal.py:88] -                 _log() 127.0.0.1 - - [12/Dec/2020 17:07:14] "POST /leavemanagement/applyleave HTTP/1.1" 400 -
+12-Dec-20 17:19:07 - [_internal.py:88] -                 _log() 127.0.0.1 - - [12/Dec/2020 17:19:07] "OPTIONS /leavemanagement/applyleave HTTP/1.1" 200 -
+12-Dec-20 17:19:07 - [_internal.py:88] -                 _log() 127.0.0.1 - - [12/Dec/2020 17:19:07] "POST /leavemanagement/applyleave HTTP/1.1" 400 -
+12-Dec-20 17:30:13 - [_internal.py:88] -                 _log() 127.0.0.1 - - [12/Dec/2020 17:30:13] "OPTIONS /leavemanagement/applyleave HTTP/1.1" 200 -
+12-Dec-20 17:30:13 - [_internal.py:88] -                 _log() 127.0.0.1 - - [12/Dec/2020 17:30:13] "POST /leavemanagement/applyleave HTTP/1.1" 400 -
+12-Dec-20 17:31:33 - [_internal.py:88] -                 _log()  * Detected change in 'D:\\Sysram\\Malaka\\api\\app\\ems\\predeparture\\controller\\pdc_registration_controller.py', reloading
+12-Dec-20 17:31:33 - [_internal.py:88] -                 _log()  * Restarting with stat
+12-Dec-20 17:31:38 - [_internal.py:88] -                 _log()  * Debugger is active!
+12-Dec-20 17:31:38 - [_internal.py:88] -                 _log()  * Debugger PIN: 163-372-452
+12-Dec-20 17:31:38 - [_internal.py:88] -                 _log()  * Running on http://0.0.0.0:3031/ (Press CTRL+C to quit)
+12-Dec-20 17:35:30 - [_internal.py:88] -                 _log() 127.0.0.1 - - [12/Dec/2020 17:35:30] "OPTIONS /leavemanagement/applyleave HTTP/1.1" 200 -
+12-Dec-20 17:35:30 - [_internal.py:88] -                 _log() 127.0.0.1 - - [12/Dec/2020 17:35:30] "POST /leavemanagement/applyleave HTTP/1.1" 400 -
+12-Dec-20 17:38:50 - [_internal.py:88] -                 _log() 127.0.0.1 - - [12/Dec/2020 17:38:50] "OPTIONS /leavemanagement/applyleave HTTP/1.1" 200 -
+12-Dec-20 17:38:50 - [_internal.py:88] -                 _log() 127.0.0.1 - - [12/Dec/2020 17:38:50] "POST /leavemanagement/applyleave HTTP/1.1" 400 -
+12-Dec-20 17:39:08 - [_internal.py:88] -                 _log() 127.0.0.1 - - [12/Dec/2020 17:39:08] "OPTIONS /leavemanagement/applyleave HTTP/1.1" 200 -
+12-Dec-20 17:39:08 - [_internal.py:88] -                 _log() 127.0.0.1 - - [12/Dec/2020 17:39:08] "POST /leavemanagement/applyleave HTTP/1.1" 400 -
+12-Dec-20 17:48:02 - [_internal.py:88] -                 _log()  * Restarting with stat
+12-Dec-20 17:48:04 - [_internal.py:88] -                 _log()  * Debugger is active!
+12-Dec-20 17:48:04 - [_internal.py:88] -                 _log()  * Debugger PIN: 163-372-452
+12-Dec-20 17:48:04 - [_internal.py:88] -                 _log()  * Running on http://0.0.0.0:3031/ (Press CTRL+C to quit)
+12-Dec-20 17:52:24 - [_internal.py:88] -                 _log() 127.0.0.1 - - [12/Dec/2020 17:52:24] "OPTIONS /leavemanagement/applyleave HTTP/1.1" 200 -
+12-Dec-20 17:52:24 - [_internal.py:88] -                 _log() 127.0.0.1 - - [12/Dec/2020 17:52:24] "POST /leavemanagement/applyleave HTTP/1.1" 400 -
+12-Dec-20 17:52:29 - [_internal.py:88] -                 _log() 127.0.0.1 - - [12/Dec/2020 17:52:29] "POST /leavemanagement/applyleave HTTP/1.1" 400 -
+12-Dec-20 17:52:30 - [_internal.py:88] -                 _log() 127.0.0.1 - - [12/Dec/2020 17:52:30] "OPTIONS /leavemanagement/applyleave HTTP/1.1" 200 -
+12-Dec-20 17:52:30 - [_internal.py:88] -                 _log() 127.0.0.1 - - [12/Dec/2020 17:52:30] "POST /leavemanagement/applyleave HTTP/1.1" 400 -
+12-Dec-20 17:52:32 - [_internal.py:88] -                 _log() 127.0.0.1 - - [12/Dec/2020 17:52:32] "POST /leavemanagement/applyleave HTTP/1.1" 400 -
+27-Jan-21 13:09:21 - [_internal.py:88] -                 _log()  * Restarting with stat
+27-Jan-21 13:09:27 - [_internal.py:88] -                 _log()  * Debugger is active!
+27-Jan-21 13:09:27 - [_internal.py:88] -                 _log()  * Debugger PIN: 163-372-452
+27-Jan-21 13:09:27 - [_internal.py:88] -                 _log()  * Running on http://0.0.0.0:3031/ (Press CTRL+C to quit)
+27-Jan-21 13:14:20 - [_internal.py:88] -                 _log()  * Detected change in 'D:\\Sysram\\Malaka\\api\\app\\ems\\predeparture\\controller\\pdc_registration_controller.py', reloading
+27-Jan-21 13:14:20 - [_internal.py:88] -                 _log()  * Restarting with stat
+27-Jan-21 13:14:26 - [_internal.py:88] -                 _log()  * Debugger is active!
+27-Jan-21 13:14:26 - [_internal.py:88] -                 _log()  * Debugger PIN: 163-372-452
+27-Jan-21 13:14:26 - [_internal.py:88] -                 _log()  * Running on http://0.0.0.0:3031/ (Press CTRL+C to quit)
+27-Jan-21 13:17:24 - [_internal.py:88] -                 _log() 127.0.0.1 - - [27/Jan/2021 13:17:24] "GET / HTTP/1.1" 200 -
+27-Jan-21 13:17:24 - [_internal.py:88] -                 _log() 127.0.0.1 - - [27/Jan/2021 13:17:24] "GET /swaggerui/swagger-ui.css HTTP/1.1" 200 -
+27-Jan-21 13:17:24 - [_internal.py:88] -                 _log() 127.0.0.1 - - [27/Jan/2021 13:17:24] "GET /swaggerui/droid-sans.css HTTP/1.1" 200 -
+27-Jan-21 13:17:25 - [_internal.py:88] -                 _log() 127.0.0.1 - - [27/Jan/2021 13:17:25] "GET /swaggerui/swagger-ui-standalone-preset.js HTTP/1.1" 200 -
+27-Jan-21 13:17:26 - [_internal.py:88] -                 _log() 127.0.0.1 - - [27/Jan/2021 13:17:26] "GET /swaggerui/swagger-ui-bundle.js HTTP/1.1" 200 -
+27-Jan-21 13:17:26 - [_internal.py:88] -                 _log() 127.0.0.1 - - [27/Jan/2021 13:17:26] "GET /swagger.json HTTP/1.1" 200 -
+27-Jan-21 13:17:27 - [_internal.py:88] -                 _log() 127.0.0.1 - - [27/Jan/2021 13:17:27] "GET /swaggerui/favicon-32x32.png HTTP/1.1" 200 -
+27-Jan-21 13:18:49 - [_internal.py:88] -                 _log() 127.0.0.1 - - [27/Jan/2021 13:18:49] "POST /schedule/graph/get_delivery_status_station HTTP/1.1" 201 -
+27-Jan-21 13:20:59 - [_internal.py:88] -                 _log()  * Restarting with stat
+27-Jan-21 13:21:05 - [_internal.py:88] -                 _log()  * Debugger is active!
+27-Jan-21 13:21:05 - [_internal.py:88] -                 _log()  * Debugger PIN: 163-372-452
+27-Jan-21 13:21:05 - [_internal.py:88] -                 _log()  * Running on http://0.0.0.0:3031/ (Press CTRL+C to quit)
+27-Jan-21 13:21:14 - [_internal.py:88] -                 _log() 127.0.0.1 - - [27/Jan/2021 13:21:14] "POST /schedule/graph/get_delivery_status_station HTTP/1.1" 201 -
+27-Jan-21 13:21:49 - [_internal.py:88] -                 _log()  * Restarting with stat
+27-Jan-21 13:21:55 - [_internal.py:88] -                 _log()  * Debugger is active!
+27-Jan-21 13:21:55 - [_internal.py:88] -                 _log()  * Debugger PIN: 163-372-452
+27-Jan-21 13:21:55 - [_internal.py:88] -                 _log()  * Running on http://0.0.0.0:3031/ (Press CTRL+C to quit)
+27-Jan-21 13:23:14 - [_internal.py:88] -                 _log() 127.0.0.1 - - [27/Jan/2021 13:23:14] "GET / HTTP/1.1" 200 -
+27-Jan-21 13:23:15 - [_internal.py:88] -                 _log() 127.0.0.1 - - [27/Jan/2021 13:23:15] "GET /swagger.json HTTP/1.1" 200 -
+27-Jan-21 13:23:15 - [_internal.py:88] -                 _log() 127.0.0.1 - - [27/Jan/2021 13:23:15] "GET /swaggerui/favicon-32x32.png HTTP/1.1" 200 -
+27-Jan-21 13:23:44 - [_internal.py:88] -                 _log() 127.0.0.1 - - [27/Jan/2021 13:23:44] "POST /schedule/graph/get_delivery_status_station HTTP/1.1" 201 -
+27-Jan-21 13:24:47 - [_internal.py:88] -                 _log()  * Restarting with stat
+27-Jan-21 13:24:53 - [_internal.py:88] -                 _log()  * Debugger is active!
+27-Jan-21 13:24:53 - [_internal.py:88] -                 _log()  * Debugger PIN: 163-372-452
+27-Jan-21 13:24:53 - [_internal.py:88] -                 _log()  * Running on http://0.0.0.0:3031/ (Press CTRL+C to quit)
+27-Jan-21 13:25:31 - [_internal.py:88] -                 _log() 127.0.0.1 - - [27/Jan/2021 13:25:31] "GET / HTTP/1.1" 200 -
+27-Jan-21 13:25:31 - [_internal.py:88] -                 _log() 127.0.0.1 - - [27/Jan/2021 13:25:31] "GET /swaggerui/droid-sans.css HTTP/1.1" 200 -
+27-Jan-21 13:25:31 - [_internal.py:88] -                 _log() 127.0.0.1 - - [27/Jan/2021 13:25:31] "GET /swaggerui/swagger-ui.css HTTP/1.1" 200 -
+27-Jan-21 13:25:31 - [_internal.py:88] -                 _log() 127.0.0.1 - - [27/Jan/2021 13:25:31] "GET /swaggerui/swagger-ui-standalone-preset.js HTTP/1.1" 200 -
+27-Jan-21 13:25:31 - [_internal.py:88] -                 _log() 127.0.0.1 - - [27/Jan/2021 13:25:31] "GET /swaggerui/swagger-ui-bundle.js HTTP/1.1" 200 -
+27-Jan-21 13:25:32 - [_internal.py:88] -                 _log() 127.0.0.1 - - [27/Jan/2021 13:25:32] "GET /swagger.json HTTP/1.1" 200 -
+27-Jan-21 13:25:32 - [_internal.py:88] -                 _log() 127.0.0.1 - - [27/Jan/2021 13:25:32] "GET /swaggerui/favicon-32x32.png HTTP/1.1" 200 -
+27-Jan-21 13:25:59 - [_internal.py:88] -                 _log()  * Restarting with stat
+27-Jan-21 13:26:05 - [_internal.py:88] -                 _log()  * Debugger is active!
+27-Jan-21 13:26:05 - [_internal.py:88] -                 _log()  * Debugger PIN: 163-372-452
+27-Jan-21 13:26:05 - [_internal.py:88] -                 _log()  * Running on http://0.0.0.0:3031/ (Press CTRL+C to quit)
+27-Jan-21 13:26:25 - [_internal.py:88] -                 _log() 127.0.0.1 - - [27/Jan/2021 13:26:25] "POST /schedule/graph/get_delivery_status_station HTTP/1.1" 201 -
+27-Jan-21 14:44:48 - [_internal.py:88] -                 _log() 127.0.0.1 - - [27/Jan/2021 14:44:48] "GET / HTTP/1.1" 200 -
+27-Jan-21 14:44:48 - [_internal.py:88] -                 _log() 127.0.0.1 - - [27/Jan/2021 14:44:48] "GET /swaggerui/droid-sans.css HTTP/1.1" 200 -
+27-Jan-21 14:44:48 - [_internal.py:88] -                 _log() 127.0.0.1 - - [27/Jan/2021 14:44:48] "GET /swaggerui/swagger-ui.css HTTP/1.1" 200 -
+27-Jan-21 14:44:48 - [_internal.py:88] -                 _log() 127.0.0.1 - - [27/Jan/2021 14:44:48] "GET /swaggerui/swagger-ui-standalone-preset.js HTTP/1.1" 200 -
+27-Jan-21 14:44:48 - [_internal.py:88] -                 _log() 127.0.0.1 - - [27/Jan/2021 14:44:48] "GET /swaggerui/swagger-ui-bundle.js HTTP/1.1" 200 -
+27-Jan-21 14:44:48 - [_internal.py:88] -                 _log() 127.0.0.1 - - [27/Jan/2021 14:44:48] "GET /swagger.json HTTP/1.1" 200 -
+27-Jan-21 14:44:49 - [_internal.py:88] -                 _log() 127.0.0.1 - - [27/Jan/2021 14:44:49] "GET /swaggerui/favicon-32x32.png HTTP/1.1" 200 -
+27-Jan-21 14:44:57 - [_internal.py:88] -                 _log() 127.0.0.1 - - [27/Jan/2021 14:44:57] "GET / HTTP/1.1" 200 -
+27-Jan-21 14:44:58 - [_internal.py:88] -                 _log() 127.0.0.1 - - [27/Jan/2021 14:44:58] "GET /swagger.json HTTP/1.1" 200 -
+27-Jan-21 14:45:47 - [_internal.py:88] -                 _log()  * Detected change in 'D:\\Sysram\\Malaka\\api\\app\\cura\\user\\service\\auth_helper.py', reloading
+27-Jan-21 14:45:48 - [_internal.py:88] -                 _log()  * Restarting with stat
+27-Jan-21 14:45:57 - [_internal.py:88] -                 _log()  * Debugger is active!
+27-Jan-21 14:45:57 - [_internal.py:88] -                 _log()  * Debugger PIN: 163-372-452
+27-Jan-21 14:45:57 - [_internal.py:88] -                 _log()  * Running on http://0.0.0.0:3031/ (Press CTRL+C to quit)
+27-Jan-21 14:46:59 - [_internal.py:88] -                 _log() 127.0.0.1 - - [27/Jan/2021 14:46:59] "POST /schedule/graph/get_delivery_status_station HTTP/1.1" 201 -
+27-Jan-21 14:47:18 - [_internal.py:88] -                 _log()  * Restarting with stat
+27-Jan-21 14:47:24 - [_internal.py:88] -                 _log()  * Debugger is active!
+27-Jan-21 14:47:24 - [_internal.py:88] -                 _log()  * Debugger PIN: 163-372-452
+27-Jan-21 14:47:24 - [_internal.py:88] -                 _log()  * Running on http://0.0.0.0:3031/ (Press CTRL+C to quit)
+27-Jan-21 14:49:00 - [_internal.py:88] -                 _log() 127.0.0.1 - - [27/Jan/2021 14:49:00] "POST /schedule/graph/get_delivery_status_station HTTP/1.1" 201 -
+27-Jan-21 14:49:12 - [_internal.py:88] -                 _log() 127.0.0.1 - - [27/Jan/2021 14:49:12] "POST /schedule/graph/get_delivery_status_station HTTP/1.1" 201 -
+27-Jan-21 14:50:18 - [_internal.py:88] -                 _log()  * Restarting with stat
+27-Jan-21 14:50:24 - [_internal.py:88] -                 _log()  * Debugger is active!
+27-Jan-21 14:50:24 - [_internal.py:88] -                 _log()  * Debugger PIN: 163-372-452
+27-Jan-21 14:50:24 - [_internal.py:88] -                 _log()  * Running on http://0.0.0.0:3031/ (Press CTRL+C to quit)
+27-Jan-21 14:52:23 - [_internal.py:88] -                 _log()  * Restarting with stat
+27-Jan-21 14:52:29 - [_internal.py:88] -                 _log()  * Debugger is active!
+27-Jan-21 14:52:29 - [_internal.py:88] -                 _log()  * Debugger PIN: 163-372-452
+27-Jan-21 14:52:29 - [_internal.py:88] -                 _log()  * Running on http://0.0.0.0:3031/ (Press CTRL+C to quit)
+27-Jan-21 14:52:44 - [_internal.py:88] -                 _log() 127.0.0.1 - - [27/Jan/2021 14:52:44] "GET / HTTP/1.1" 200 -
+27-Jan-21 14:52:44 - [_internal.py:88] -                 _log() 127.0.0.1 - - [27/Jan/2021 14:52:44] "GET /swaggerui/droid-sans.css HTTP/1.1" 200 -
+27-Jan-21 14:52:45 - [_internal.py:88] -                 _log() 127.0.0.1 - - [27/Jan/2021 14:52:45] "GET /swaggerui/swagger-ui.css HTTP/1.1" 200 -
+27-Jan-21 14:52:45 - [_internal.py:88] -                 _log() 127.0.0.1 - - [27/Jan/2021 14:52:45] "GET /swaggerui/swagger-ui-bundle.js HTTP/1.1" 200 -
+27-Jan-21 14:52:45 - [_internal.py:88] -                 _log() 127.0.0.1 - - [27/Jan/2021 14:52:45] "GET /swaggerui/swagger-ui-standalone-preset.js HTTP/1.1" 200 -
+27-Jan-21 14:52:46 - [_internal.py:88] -                 _log() 127.0.0.1 - - [27/Jan/2021 14:52:46] "GET /swaggerui/favicon-32x32.png HTTP/1.1" 200 -
+27-Jan-21 14:52:46 - [_internal.py:88] -                 _log() 127.0.0.1 - - [27/Jan/2021 14:52:46] "GET /swagger.json HTTP/1.1" 200 -
+27-Jan-21 14:53:49 - [schedule_service.py:1586] - get_delivery_status_station() (psycopg2.OperationalError) server closed the connection unexpectedly
+	This probably means the server terminated abnormally
+	before or while processing the request.
+ [SQL: 'SELECT "tblSchedule".loc AS "tblSchedule_loc", count("tblSchedule".schedule_id) AS schedule_count \nFROM "tblSchedule" \nWHERE "tblSchedule"."isActive" = %(isActive_1)s AND "tblSchedule".schedule_date = %(schedule_date_1)s GROUP BY "tblSchedule".loc'] [parameters: {'isActive_1': 1, 'schedule_date_1': datetime.date(2021, 1, 27)}] (Background on this error at: http://sqlalche.me/e/e3q8)
+Traceback (most recent call last):
+  File "C:\Program Files\Python36\lib\site-packages\sqlalchemy\engine\base.py", line 1193, in _execute_context
+    context)
+  File "C:\Program Files\Python36\lib\site-packages\sqlalchemy\engine\default.py", line 507, in do_execute
+    cursor.execute(statement, parameters)
+psycopg2.OperationalError: server closed the connection unexpectedly
+	This probably means the server terminated abnormally
+	before or while processing the request.
+
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "D:\Sysram\Malaka\api\app\ems\schedule\sevice\schedule_service.py", line 1566, in get_delivery_status_station
+    full_data = data_query.all()
+  File "C:\Program Files\Python36\lib\site-packages\sqlalchemy\orm\query.py", line 2737, in all
+    return list(self)
+  File "C:\Program Files\Python36\lib\site-packages\sqlalchemy\orm\query.py", line 2889, in __iter__
+    return self._execute_and_instances(context)
+  File "C:\Program Files\Python36\lib\site-packages\sqlalchemy\orm\query.py", line 2912, in _execute_and_instances
+    result = conn.execute(querycontext.statement, self._params)
+  File "C:\Program Files\Python36\lib\site-packages\sqlalchemy\engine\base.py", line 948, in execute
+    return meth(self, multiparams, params)
+  File "C:\Program Files\Python36\lib\site-packages\sqlalchemy\sql\elements.py", line 269, in _execute_on_connection
+    return connection._execute_clauseelement(self, multiparams, params)
+  File "C:\Program Files\Python36\lib\site-packages\sqlalchemy\engine\base.py", line 1060, in _execute_clauseelement
+    compiled_sql, distilled_params
+  File "C:\Program Files\Python36\lib\site-packages\sqlalchemy\engine\base.py", line 1200, in _execute_context
+    context)
+  File "C:\Program Files\Python36\lib\site-packages\sqlalchemy\engine\base.py", line 1413, in _handle_dbapi_exception
+    exc_info
+  File "C:\Program Files\Python36\lib\site-packages\sqlalchemy\util\compat.py", line 203, in raise_from_cause
+    reraise(type(exception), exception, tb=exc_tb, cause=cause)
+  File "C:\Program Files\Python36\lib\site-packages\sqlalchemy\util\compat.py", line 186, in reraise
+    raise value.with_traceback(tb)
+  File "C:\Program Files\Python36\lib\site-packages\sqlalchemy\engine\base.py", line 1193, in _execute_context
+    context)
+  File "C:\Program Files\Python36\lib\site-packages\sqlalchemy\engine\default.py", line 507, in do_execute
+    cursor.execute(statement, parameters)
+sqlalchemy.exc.OperationalError: (psycopg2.OperationalError) server closed the connection unexpectedly
+	This probably means the server terminated abnormally
+	before or while processing the request.
+ [SQL: 'SELECT "tblSchedule".loc AS "tblSchedule_loc", count("tblSchedule".schedule_id) AS schedule_count \nFROM "tblSchedule" \nWHERE "tblSchedule"."isActive" = %(isActive_1)s AND "tblSchedule".schedule_date = %(schedule_date_1)s GROUP BY "tblSchedule".loc'] [parameters: {'isActive_1': 1, 'schedule_date_1': datetime.date(2021, 1, 27)}] (Background on this error at: http://sqlalche.me/e/e3q8)
+27-Jan-21 14:53:50 - [_internal.py:88] -                 _log() 127.0.0.1 - - [27/Jan/2021 14:53:50] "POST /schedule/graph/get_delivery_status_station HTTP/1.1" 201 -
+27-Jan-21 14:54:38 - [_internal.py:88] -                 _log() 127.0.0.1 - - [27/Jan/2021 14:54:38] "POST /schedule/graph/get_delivery_status_station HTTP/1.1" 201 -
+27-Jan-21 14:55:59 - [_internal.py:88] -                 _log()  * Restarting with stat
+27-Jan-21 14:56:02 - [_internal.py:88] -                 _log()  * Debugger is active!
+27-Jan-21 14:56:02 - [_internal.py:88] -                 _log()  * Debugger PIN: 163-372-452
+27-Jan-21 14:56:02 - [_internal.py:88] -                 _log()  * Running on http://0.0.0.0:3031/ (Press CTRL+C to quit)
+27-Jan-21 14:56:22 - [_internal.py:88] -                 _log()  * Restarting with stat
+27-Jan-21 14:56:29 - [_internal.py:88] -                 _log()  * Debugger is active!
+27-Jan-21 14:56:29 - [_internal.py:88] -                 _log()  * Debugger PIN: 163-372-452
+27-Jan-21 14:56:29 - [_internal.py:88] -                 _log()  * Running on http://0.0.0.0:3031/ (Press CTRL+C to quit)
+27-Jan-21 14:56:37 - [_internal.py:88] -                 _log() 127.0.0.1 - - [27/Jan/2021 14:56:37] "GET / HTTP/1.1" 200 -
+27-Jan-21 14:56:37 - [_internal.py:88] -                 _log() 127.0.0.1 - - [27/Jan/2021 14:56:37] "GET /swaggerui/droid-sans.css HTTP/1.1" 200 -
+27-Jan-21 14:56:37 - [_internal.py:88] -                 _log() 127.0.0.1 - - [27/Jan/2021 14:56:37] "GET /swaggerui/swagger-ui.css HTTP/1.1" 200 -
+27-Jan-21 14:56:37 - [_internal.py:88] -                 _log() 127.0.0.1 - - [27/Jan/2021 14:56:37] "GET /swaggerui/swagger-ui-bundle.js HTTP/1.1" 200 -
+27-Jan-21 14:56:37 - [_internal.py:88] -                 _log() 127.0.0.1 - - [27/Jan/2021 14:56:37] "GET /swaggerui/swagger-ui-standalone-preset.js HTTP/1.1" 200 -
+27-Jan-21 14:56:38 - [_internal.py:88] -                 _log() 127.0.0.1 - - [27/Jan/2021 14:56:38] "GET /swagger.json HTTP/1.1" 200 -
+27-Jan-21 14:56:38 - [_internal.py:88] -                 _log() 127.0.0.1 - - [27/Jan/2021 14:56:38] "GET /swaggerui/favicon-32x32.png HTTP/1.1" 200 -
+27-Jan-21 14:56:57 - [_internal.py:88] -                 _log() 127.0.0.1 - - [27/Jan/2021 14:56:57] "POST /schedule/graph/get_delivery_status_station HTTP/1.1" 201 -
+27-Jan-21 14:57:37 - [_internal.py:88] -                 _log() 127.0.0.1 - - [27/Jan/2021 14:57:37] "POST /schedule/graph/get_delivery_status_station HTTP/1.1" 201 -
+27-Jan-21 14:57:38 - [_internal.py:88] -                 _log()  * Restarting with stat
+27-Jan-21 15:02:48 - [auth_helper.py:50] -           login_user() (psycopg2.OperationalError) server closed the connection unexpectedly
+	This probably means the server terminated abnormally
+	before or while processing the request.
+ [SQL: 'SELECT tbluser.id AS tbluser_id, tbluser.public_id AS tbluser_public_id, tbluser.rkp_name AS tbluser_rkp_name, tbluser.employment_date AS tbluser_employment_date, tbluser.employment_status AS tbluser_employment_status, tbluser.licence_expiry AS tbluser_licence_expiry, tbluser.licence_number AS tbluser_licence_number, tbluser.gdl_expiry AS tbluser_gdl_expiry, tbluser.melaka_port_expiry AS tbluser_melaka_port_expiry, tbluser.licence_type AS tbluser_licence_type, tbluser.blood_type AS tbluser_blood_type, tbluser.location AS tbluser_location, tbluser.rkp_id_number AS tbluser_rkp_id_number, tbluser.rkp_ic_number AS tbluser_rkp_ic_number, tbluser.phone_number AS tbluser_phone_number, tbluser.medical_expiry AS tbluser_medical_expiry, tbluser.lpg_ptp_ogsp_expiry AS tbluser_lpg_ptp_ogsp_expiry, tbluser.remark AS tbluser_remark, tbluser.file_path AS tbluser_file_path, tbluser.address1 AS tbluser_address1, tbluser.address2 AS tbluser_address2, tbluser.district AS tbluser_district, tbluser.state AS tbluser_state, tbluser.post_code AS tbluser_post_code, tbluser.image_path AS tbluser_image_path, tbluser.email AS tbluser_email, tbluser.first_name AS tbluser_first_name, tbluser.last_name AS tbluser_last_name, tbluser.roles AS tbluser_roles, tbluser.address AS tbluser_address, tbluser.gender AS tbluser_gender, tbluser.password_hash AS tbluser_password_hash, tbluser.reg_no AS tbluser_reg_no, tbluser.no_kp_baru AS tbluser_no_kp_baru, tbluser.join_date AS tbluser_join_date, tbluser.no_tel AS tbluser_no_tel, tbluser.license_expiry_date AS tbluser_license_expiry_date, tbluser.gdl_expiry_date AS tbluser_gdl_expiry_date, tbluser.no_lessen AS tbluser_no_lessen, tbluser.passport_expiry_date AS tbluser_passport_expiry_date, tbluser.base_pass_expiry_date AS tbluser_base_pass_expiry_date, tbluser.date_of_employment AS tbluser_date_of_employment, tbluser.lpg AS tbluser_lpg, tbluser.medical_check_up AS tbluser_medical_check_up, tbluser.jenis_lesen AS tbluser_jenis_lesen, tbluser.age AS tbluser_age, tbluser.status AS tbluser_status, tbluser.latitude AS tbluser_latitude, tbluser.longitude AS tbluser_longitude, tbluser.lat_long_updated_date AS tbluser_lat_long_updated_date, tbluser.device_table_id AS tbluser_device_table_id, tbluser.legal_doc AS tbluser_legal_doc, tbluser.created_by AS tbluser_created_by, tbluser.updated_by AS tbluser_updated_by, tbluser.created_date AS tbluser_created_date, tbluser.updated_date AS tbluser_updated_date, tbluser."isActive" AS "tbluser_isActive" \nFROM tbluser \nWHERE lower(tbluser.email) = lower(%(lower_1)s) AND tbluser."isActive" = %(isActive_1)s \n LIMIT %(param_1)s'] [parameters: {'lower_1': 'operations@ems.com', 'isActive_1': 1, 'param_1': 1}] (Background on this error at: http://sqlalche.me/e/e3q8)
+27-Jan-21 15:02:48 - [_internal.py:88] -                 _log() 127.0.0.1 - - [27/Jan/2021 15:02:48] "POST /auth/login HTTP/1.1" 200 -
+27-Jan-21 15:03:04 - [user.py:92] -       check_password() password : 
+27-Jan-21 15:03:04 - [user.py:93] -       check_password() sql password : 123456
+27-Jan-21 15:03:05 - [_internal.py:88] -                 _log() 127.0.0.1 - - [27/Jan/2021 15:03:05] "POST /auth/login HTTP/1.1" 200 -
+27-Jan-21 15:03:26 - [user.py:92] -       check_password() password : 
+27-Jan-21 15:03:26 - [user.py:93] -       check_password() sql password : zse45rdx
+27-Jan-21 15:03:28 - [_internal.py:88] -                 _log() 127.0.0.1 - - [27/Jan/2021 15:03:28] "POST /auth/login HTTP/1.1" 200 -
+27-Jan-21 15:10:07 - [schedule_service.py:1586] - get_delivery_status_station() (psycopg2.OperationalError) server closed the connection unexpectedly
+	This probably means the server terminated abnormally
+	before or while processing the request.
+ [SQL: 'SELECT "tblSchedule".loc AS "tblSchedule_loc", count("tblSchedule".schedule_id) AS schedule_count \nFROM "tblSchedule" \nWHERE "tblSchedule"."isActive" = %(isActive_1)s AND "tblSchedule".schedule_date = %(schedule_date_1)s GROUP BY "tblSchedule".loc'] [parameters: {'isActive_1': 1, 'schedule_date_1': datetime.date(2021, 1, 27)}] (Background on this error at: http://sqlalche.me/e/e3q8)
+Traceback (most recent call last):
+  File "C:\Program Files\Python36\lib\site-packages\sqlalchemy\engine\base.py", line 1193, in _execute_context
+    context)
+  File "C:\Program Files\Python36\lib\site-packages\sqlalchemy\engine\default.py", line 507, in do_execute
+    cursor.execute(statement, parameters)
+psycopg2.OperationalError: server closed the connection unexpectedly
+	This probably means the server terminated abnormally
+	before or while processing the request.
+
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "D:\Sysram\Malaka\api\app\ems\schedule\sevice\schedule_service.py", line 1566, in get_delivery_status_station
+    full_data = data_query.all()
+  File "C:\Program Files\Python36\lib\site-packages\sqlalchemy\orm\query.py", line 2737, in all
+    return list(self)
+  File "C:\Program Files\Python36\lib\site-packages\sqlalchemy\orm\query.py", line 2889, in __iter__
+    return self._execute_and_instances(context)
+  File "C:\Program Files\Python36\lib\site-packages\sqlalchemy\orm\query.py", line 2912, in _execute_and_instances
+    result = conn.execute(querycontext.statement, self._params)
+  File "C:\Program Files\Python36\lib\site-packages\sqlalchemy\engine\base.py", line 948, in execute
+    return meth(self, multiparams, params)
+  File "C:\Program Files\Python36\lib\site-packages\sqlalchemy\sql\elements.py", line 269, in _execute_on_connection
+    return connection._execute_clauseelement(self, multiparams, params)
+  File "C:\Program Files\Python36\lib\site-packages\sqlalchemy\engine\base.py", line 1060, in _execute_clauseelement
+    compiled_sql, distilled_params
+  File "C:\Program Files\Python36\lib\site-packages\sqlalchemy\engine\base.py", line 1200, in _execute_context
+    context)
+  File "C:\Program Files\Python36\lib\site-packages\sqlalchemy\engine\base.py", line 1413, in _handle_dbapi_exception
+    exc_info
+  File "C:\Program Files\Python36\lib\site-packages\sqlalchemy\util\compat.py", line 203, in raise_from_cause
+    reraise(type(exception), exception, tb=exc_tb, cause=cause)
+  File "C:\Program Files\Python36\lib\site-packages\sqlalchemy\util\compat.py", line 186, in reraise
+    raise value.with_traceback(tb)
+  File "C:\Program Files\Python36\lib\site-packages\sqlalchemy\engine\base.py", line 1193, in _execute_context
+    context)
+  File "C:\Program Files\Python36\lib\site-packages\sqlalchemy\engine\default.py", line 507, in do_execute
+    cursor.execute(statement, parameters)
+sqlalchemy.exc.OperationalError: (psycopg2.OperationalError) server closed the connection unexpectedly
+	This probably means the server terminated abnormally
+	before or while processing the request.
+ [SQL: 'SELECT "tblSchedule".loc AS "tblSchedule_loc", count("tblSchedule".schedule_id) AS schedule_count \nFROM "tblSchedule" \nWHERE "tblSchedule"."isActive" = %(isActive_1)s AND "tblSchedule".schedule_date = %(schedule_date_1)s GROUP BY "tblSchedule".loc'] [parameters: {'isActive_1': 1, 'schedule_date_1': datetime.date(2021, 1, 27)}] (Background on this error at: http://sqlalche.me/e/e3q8)
+27-Jan-21 15:10:07 - [_internal.py:88] -                 _log() 127.0.0.1 - - [27/Jan/2021 15:10:07] "POST /schedule/graph/get_delivery_status_station HTTP/1.1" 201 -
+27-Jan-21 15:11:28 - [_internal.py:88] -                 _log()  * Restarting with stat
+27-Jan-21 15:11:31 - [_internal.py:88] -                 _log()  * Debugger is active!
+27-Jan-21 15:11:31 - [_internal.py:88] -                 _log()  * Debugger PIN: 163-372-452
+27-Jan-21 15:11:31 - [_internal.py:88] -                 _log()  * Running on http://0.0.0.0:3031/ (Press CTRL+C to quit)
+27-Jan-21 15:11:31 - [_internal.py:88] -                 _log()  * Restarting with stat
+27-Jan-21 15:11:35 - [_internal.py:88] -                 _log()  * Debugger is active!
+27-Jan-21 15:11:35 - [_internal.py:88] -                 _log()  * Debugger PIN: 163-372-452
+27-Jan-21 15:11:35 - [_internal.py:88] -                 _log()  * Running on http://0.0.0.0:3031/ (Press CTRL+C to quit)
+27-Jan-21 15:12:31 - [_internal.py:88] -                 _log()  * Restarting with stat
+27-Jan-21 15:26:51 - [_internal.py:88] -                 _log() 127.0.0.1 - - [27/Jan/2021 15:26:51] "POST /schedule/graph/get_delivery_status_station HTTP/1.1" 201 -
+27-Jan-21 15:27:29 - [_internal.py:88] -                 _log() 127.0.0.1 - - [27/Jan/2021 15:27:29] "POST /schedule/graph/get_delivery_status_station HTTP/1.1" 201 -
+27-Jan-21 15:28:14 - [_internal.py:88] -                 _log() 127.0.0.1 - - [27/Jan/2021 15:28:14] "POST /schedule/graph/get_delivery_status_station HTTP/1.1" 201 -
+27-Jan-21 16:17:42 - [_internal.py:88] -                 _log()  * Detected change in 'D:\\Sysram\\Malaka\\api\\app\\ems\\schedule\\sevice\\schedule_service.py', reloading
+27-Jan-21 16:17:47 - [_internal.py:88] -                 _log()  * Restarting with stat
+27-Jan-21 16:18:07 - [_internal.py:88] -                 _log()  * Debugger is active!
+27-Jan-21 16:18:07 - [_internal.py:88] -                 _log()  * Debugger PIN: 163-372-452
+27-Jan-21 16:18:07 - [_internal.py:88] -                 _log()  * Running on http://0.0.0.0:3031/ (Press CTRL+C to quit)
+27-Jan-21 17:49:06 - [_internal.py:88] -                 _log()  * Detected change in 'D:\\Sysram\\Malaka\\api\\app\\ems\\leave_management\\service\\leave_management_service.py', reloading
+27-Jan-21 17:49:06 - [_internal.py:88] -                 _log()  * Restarting with stat
+27-Jan-21 17:49:12 - [_internal.py:88] -                 _log()  * Debugger is active!
+27-Jan-21 17:49:12 - [_internal.py:88] -                 _log()  * Debugger PIN: 163-372-452
+27-Jan-21 17:49:12 - [_internal.py:88] -                 _log()  * Running on http://0.0.0.0:3031/ (Press CTRL+C to quit)
+27-Jan-21 17:49:44 - [_internal.py:88] -                 _log()  * Detected change in 'D:\\Sysram\\Malaka\\api\\app\\ems\\leave_management\\service\\leave_management_service.py', reloading
+27-Jan-21 17:49:44 - [_internal.py:88] -                 _log()  * Restarting with stat
+27-Jan-21 17:49:49 - [_internal.py:88] -                 _log()  * Debugger is active!
+27-Jan-21 17:49:49 - [_internal.py:88] -                 _log()  * Debugger PIN: 163-372-452
+27-Jan-21 17:49:49 - [_internal.py:88] -                 _log()  * Running on http://0.0.0.0:3031/ (Press CTRL+C to quit)
+27-Jan-21 17:49:58 - [_internal.py:88] -                 _log()  * Detected change in 'D:\\Sysram\\Malaka\\api\\app\\cura\\user\\service\\user_service.py', reloading
+27-Jan-21 17:49:59 - [_internal.py:88] -                 _log()  * Restarting with stat
+27-Jan-21 17:50:03 - [_internal.py:88] -                 _log()  * Debugger is active!
+27-Jan-21 17:50:03 - [_internal.py:88] -                 _log()  * Debugger PIN: 163-372-452
+27-Jan-21 17:50:03 - [_internal.py:88] -                 _log()  * Running on http://0.0.0.0:3031/ (Press CTRL+C to quit)
+27-Jan-21 17:50:31 - [_internal.py:88] -                 _log()  * Detected change in 'D:\\Sysram\\Malaka\\api\\app\\ems\\leave_management\\service\\leave_management_service.py', reloading
+27-Jan-21 17:50:31 - [_internal.py:88] -                 _log()  * Restarting with stat
+27-Jan-21 17:50:35 - [_internal.py:88] -                 _log()  * Debugger is active!
+27-Jan-21 17:50:35 - [_internal.py:88] -                 _log()  * Debugger PIN: 163-372-452
+27-Jan-21 17:50:35 - [_internal.py:88] -                 _log()  * Running on http://0.0.0.0:3031/ (Press CTRL+C to quit)
+27-Jan-21 17:52:01 - [_internal.py:88] -                 _log()  * Detected change in 'D:\\Sysram\\Malaka\\api\\app\\ems\\schedule\\controller\\schedule_controller.py', reloading
+27-Jan-21 17:52:01 - [_internal.py:88] -                 _log()  * Restarting with stat
+27-Jan-21 17:52:05 - [_internal.py:88] -                 _log()  * Debugger is active!
+27-Jan-21 17:52:05 - [_internal.py:88] -                 _log()  * Debugger PIN: 163-372-452
+27-Jan-21 17:52:05 - [_internal.py:88] -                 _log()  * Running on http://0.0.0.0:3031/ (Press CTRL+C to quit)
